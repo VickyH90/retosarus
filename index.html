@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-Mongo</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="card">
+        <div class="card-content" id="content">
+            <center>
+            <h1 class="card-title">My practice database</h1>
+            <form method="post" action="/addData" id="myform">
+                <label for="card">Enter your name</label><br>
+                <input type="text" name="name" placeholder="Enter your name" required class="form-control" id="name" ><br>
+                <label for="card">Enter your password</label><br>
+                <input type="password" name="pwd" placeholder="Enter your password" required class="form-control" id="pwd" ><br><br>
+                <input type="date" name = "date" required class="form-control" id="date" ><br><br>
+                <input type="submit" value="Add info" class="btn btn-primary"><br>
+                
+            </form><br>
+            <form method="get" action="/getdata">
+            </center> <br> <br>
+                <label class="card-title">Get your Information</label><br><br>
+                <input type="date" name = "search" required class="form-control" id="search" ><br><br>
+                <input type="submit" value="Get info" class="btn btn-primary" >
+                
+            </form>
+        </div>
+    </div>
+    <button onclick="email()">Email</button>
+</body>
+</html>
